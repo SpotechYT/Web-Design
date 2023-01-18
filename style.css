@@ -1,3 +1,48 @@
-body {
+:root {
+    --yellow: #fcb315;
+    --darkgrey: #4d4e53;
+}
 
+header {
+    position: sticky;
+    position: -webkit-sticky;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    margin-top: -8px;
+    margin-left: -8px;
+    width: 100vw;
+    height: 50px;
+    max-height: 50px;
+    background-color: var(--darkgrey);
+    font-size: 25px;
+    text-align: center;
+    justify-center: center;
+    color: var(--yellow);
+    vertical-align: middle;
+}
+header a {
+  margin: 0;
+  padding-top: 10px;
+  padding-left: 5px;
+}
+
+body{
+    background-color: grey;
+}
+
+a:link {
+    text-decoration: none;
+    color: var(--yellow);
+}
+a:visited {
+    text-decoration: none;
+    color: var(--yellow);
+}
+a:hover {
+    color: orange;
+}
+a:active {
+    text-decoration: none; 
+    color: var(--yellow);
 }
