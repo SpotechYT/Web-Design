@@ -9,6 +9,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     padding: 5px;
+
     margin-top: -8px;
     margin-left: -8px;
     width: 100vw;
@@ -16,19 +17,33 @@ header {
     max-height: 50px;
     background-color: var(--darkgrey);
     font-size: 25px;
-    text-align: center;
-    justify-center: center;
     color: var(--yellow);
     vertical-align: middle;
 }
 header a {
   margin: 0;
   padding-top: 10px;
-  padding-left: 5px;
+  padding-left: 10px;
 }
 
 body{
     background-color: grey;
+    color: var(--yellow);
+}
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hacker {
+    background-image: url(./assets/Hacker.gif);
+    background-size: 250px;
+}
+
+ul {
+  padding-inline-start: -5px;
+  font-size: 24px;
 }
 
 a:link {
