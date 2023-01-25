@@ -9,17 +9,17 @@ header {
     display: flex;
     flex-wrap: wrap;
     padding: 5px;
-
     margin-top: -8px;
     margin-left: -8px;
     width: 100vw;
     height: 50px;
+    background-color: #000000;
     max-height: 50px;
-    background-color: var(--darkgrey);
     font-size: 25px;
     color: var(--yellow);
     vertical-align: middle;
 }
+
 header a {
   margin: 0;
   padding-top: 10px;
@@ -38,6 +38,17 @@ body{
 
 .hacker {
     background-image: url(./assets/Hacker.gif);
+    background-size: 250px;
+}
+
+.headerDark {
+    background: linear-gradient(rgba(40,40,40,1), rgba(40,40,40,0.2),rgba(40,40,40,1));
+    background-size: 250px;
+}
+
+.toppoLight {
+    background: linear-gradient(rgba(100,100,125,0.5), rgba(0,0,0,0.5)),
+    url(./assets/BlueToppo.jpeg);
     background-size: 250px;
 }
 
