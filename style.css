@@ -56,6 +56,11 @@ body{
     background-size: 250px;
 }
 
+.space {
+    background-image: url(./assets/Stars.jpg);
+    background-size: 500px;
+}
+
 ul, ol {
   padding-inline-start: -5px;
   font-size: 24px;
