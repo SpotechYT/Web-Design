@@ -27,6 +27,7 @@ header a {
 body{
     background-color: grey;
     color: var(--yellow);
+    overflow-x: hidden;
 }
 
 .section {
