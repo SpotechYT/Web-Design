@@ -1,0 +1,74 @@
+@font-face {
+    font-family: bioweapon;
+    src: url(./Fonts/bioweapon/BIOWEAPON.ttf);
+}
+
+@font-face {
+    font-family: heebo-black;
+    src: url(./Fonts/heeebo/Heebo-Black.ttf);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: heebo;
+    src: url(./Fonts/heeebo/Heebo-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: heebo;
+    src: url(./Fonts/heeebo/Heebo-ExtraBold.ttf);
+    font-weight: bolder;
+}
+
+@font-face {
+    font-family: heebo;
+    src: url(./Fonts/heeebo/Heebo-Light.ttf);
+    font-weight: light;
+}
+
+@font-face {
+    font-family: heebo;
+    src: url(./Fonts/heeebo/Heebo-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: heebo;
+    src: url(./Fonts/heeebo/Heebo-Regular.ttf);
+}
+
+@font-face {
+    font-family: heebo;
+    src: url(./Fonts/heeebo/Heebo-Thin.ttf);
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: moon;
+    src: url(./Fonts/moon/Moon2.0-Light.otf);
+    font-weight: light;
+}
+
+@font-face {
+    font-family: moon;
+    src: url(./Fonts/moon/Moon2.0-Regular.otf);
+}
+
+@font-face {
+    font-family: moon;
+    src: url(./Fonts/moon/Moon2.0-Bold.otf);
+    font-weight: bold;
+}
+
+.bioweapon {
+    font-family: 'bioweapon';
+}
+
+.heebo {
+    font-family: 'heebo';
+}
+
+.moon {
+    font-family: 'moon';
+}
