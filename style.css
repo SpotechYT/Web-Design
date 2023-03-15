@@ -11,7 +11,7 @@ header {
     margin-left: -8px;
     width: 100vw;
     height: 50px;
-    background-color: #000000;
+    background-color: #454a4d;
     max-height: 50px;
     font-size: 25px;
     color: var(--yellow);
@@ -193,4 +193,8 @@ a:active {
 
 .moon {
     font-family: 'moon';
+}
+
+.comicSans {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
