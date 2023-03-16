@@ -198,3 +198,44 @@ a:active {
 .comicSans {
     font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
+
+.ListNav {
+    display: block;
+}
+
+.HamburgerNav {
+    display: none;
+
+    right: 30px;
+    position: absolute;
+    top: 0px;
+    color: var(--yellow);
+}
+
+.HamburgerMenu {
+    display: none;
+
+    flex-direction: column;
+    flex-wrap: nowrap;
+    position: fixed;
+    background-color: #202324;
+    margin-left: -8px;
+    margin-top: 50px;
+    width: 100vw;
+    height: 100vh;
+    border: var(--yellow) solid 1px;
+}
+
+.HamburgerMenu a {
+    font-size: 75px;
+    border-bottom: #fcb315 solid 1px;
+}
+
+@media screen and (max-width: 910px) {
+    .HamburgerNav {
+        display: block;
+    }
+    .ListNav {
+        display: none;
+    }
+}
