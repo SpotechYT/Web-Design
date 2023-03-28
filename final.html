@@ -3,7 +3,7 @@
         <meta charset="utf-8" />
         <title>Haniel Mikhaiel</title>
         <link rel="icon" type="image/x-icon" href="./assets/Logo.jpg">
-        <link rel="stylesheet" type="text/css" href="./style.css">
+        <link rel="stylesheet" type="text/css" href="./styleFC.css">
         <link rel="stylesheet" type="text/css" href="./Fonts/fonts.css">
     </head>
     <script src="./hamburger.js"></script>
@@ -31,7 +31,60 @@
             <a href="./final.html">Sports Team</a>
         </div>
     </header>
-    <body class="toppoLight">
-        <center><img src="./assets/Artifact.png" style="height: 600px"></center>
+    <body class="field heebo">
+        <div class="HeadIMG">
+            <center><h1 class="heebo" style="font-size: 120px; position: absolute; padding-top: 250px; margin-left: -8px;">Remillard FC</h1></center>
+            <center><h2 class="heebo" style="font-size: 50px; position: absolute; padding-top: 420px;">The Best of the Best</h2></center>
+        </div>
+        <div>
+            <center><h1 class="heebo" style="font-size: 50px;">Meet the Team!</h1></center>
+            <div class="Team">
+                <img class="A" src="./assets/final/Remillard.png" style="width: 300px;">
+                <img class="B" src="./assets/final/Heard.png" style="width: 300px;">
+                <img class="C" src="./assets/final/Parker.png" style="width: 300px;">
+                <img class="D" src="./assets/final/Bowden.png" style="width: 300px;">
+                <img class="E" src="./assets/final/chart.png" style="width: 500px;">
+            </div>
+            <center><h1 class="heebo" style="font-size: 50px;">Buy Practice Tickets!</h1></center>
+            <div class="Tickets">
+                <table>
+                    <tr>
+                        <th>Type</th>
+                        <th>Price</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>Regular</td>
+                        <td>$70</td>
+                        <td>Plastic seat at the back with the view of specs running around the field</td>
+                    </tr>
+                    <tr>
+                        <td>VIP</td>
+                        <td>$100</td>
+                        <td>Luxuary, front row seats with memory foam and free drink refils</td>
+                    </tr>
+                    <tr>
+                        <td>Addon - Meet-n-Greet</td>
+                        <td>+$100</td>
+                        <td>Add a once of a life time oportunity of meeting the team and joining a give away for the game ball with pictures</td>
+                    </tr>
+                </table>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.392433345887!2d-117.15022938504544!3d32.96704678157936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dbf82069d90af3%3A0xf05fcc8f2695ae50!2s13500%20Wolverine%20Way%2C%20San%20Diego%2C%20CA%2092129!5e0!3m2!1sen!2sus!4v1680034407108!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <center><h1 class="heebo" style="font-size: 50px;">Join our Mailing list</h1></center>
+            <div class="History heebo">
+                <center><h2>Don't miss out on the latest news and next games topped off with exclusive deals and once in a life time oportunities</h2>
+                <form onsubmit="return submited(document.getElementById('email').value);">
+                    <input type="text" id="email" name="email" value="example@email.com" placeholder="Enter your Email...">
+                    <input type="submit" id="submit" value="Submit">
+                </form>
+                <h2>"Best. Team. Ever. You won't be bored watching this team play." - Ms. Neumann</h2></center>
+            </div>
+        </div>
+        <script>
+            function submited(email){
+                alert("The email " + email + " is now on the waiting list!");
+            }
+        </script>
     </body>
 </html>
