@@ -18,6 +18,18 @@ header {
     vertical-align: middle;
 }
 
+.HeadIMG {
+    background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url(./Headder.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    margin-left: -8px;
+    color: white;
+    justify-content: center;
+    text-align: center;
+}
+
 header a {
   margin: 0;
   padding-top: 10px;
@@ -26,8 +38,22 @@ header a {
 
 body{
     background-color: grey;
-    color: var(--yellow);
+    color: white;
     overflow-x: hidden;
+}
+
+@media screen and (max-width: 1023px){
+    .Team {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .Tickets {
+        display: block;
+    }
+    iframe {
+        width: 100%;
+    }
 }
 
 .section {
@@ -35,9 +61,37 @@ body{
     flex-wrap: wrap;
 }
 
-.hacker {
-    background-image: url(./Hacker.gif);
+.headerDark {
+    background: linear-gradient(rgba(40,40,40,1), rgba(40,40,40,0.2),rgba(40,40,40,1));
     background-size: 250px;
+}
+
+.hacker {
+    background-image: url(./assets/Hacker.gif);
+    background-size: 250px;
+}
+
+.webtech {
+    background: linear-gradient(rgba(100,100,125,0.5), rgba(0,0,0,0.5)), url(./assets/Network.jpg);
+    background-size: 250px;
+    color: whitesmoke;
+}
+
+.toppoLight {
+    background: linear-gradient(rgba(100,100,125,0.5), rgba(0,0,0,0.5)),
+    url(./assets/BlueToppo.jpeg);
+    background-size: 250px;
+}
+
+.field {
+    background: linear-gradient(rgba(100,100,125,0.5), rgba(0,0,0,0.5)),
+    url(./field.jpg);
+    background-size: 250px;
+}
+
+.space {
+    background-image: url(./assets/Stars.jpg);
+    background-size: 500px;
 }
 
 ul, ol {
@@ -55,6 +109,13 @@ td, th {
   border: 1px solid #000000;
   text-align: left;
   padding: 8px;
+}
+
+#game {
+    justify-content: right;
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: 50px;
 }
 
 /* ScrollBar */

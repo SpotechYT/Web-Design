@@ -101,7 +101,9 @@ body{
 }
 
 .SPret {
-    background-image: url(./SPret.jpg);
+    background-image: url(./SPret.jpg);/E
+
+
     background-size: 100%;
     background-repeat: no-repeat;
     background-color: white;
@@ -344,7 +346,7 @@ a:active {
 }
 
 .HamburgerMenu a {
-    font-size: 75px;
+    font-size: 50px;
     border-bottom: #fcb315 solid 1px;
 }
 
