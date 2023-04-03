@@ -30,10 +30,22 @@ body{
     overflow-x: hidden;
 }
 
-.toppoLight {
+.section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.webtech {
     background: linear-gradient(rgba(100,100,125,0.5), rgba(0,0,0,0.5)),
-    url(./Toppo.jpeg);
+    url(./Network.jpg);
     background-size: 250px;
+}
+
+#game {
+    justify-content: right;
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: 50px;
 }
 
 /* ScrollBar */
@@ -74,70 +86,61 @@ a:active {
 
 /* Fonts */
 @font-face {
-    font-family: bioweapon;
-    src: url(./Fonts/bioweapon/BIOWEAPON.ttf);
-}
-
-@font-face {
     font-family: heebo-black;
-    src: url(./Fonts/heeebo/Heebo-Black.ttf);
+    src: url(../Fonts/heeebo/Heebo-Black.ttf);
     font-weight: 900;
 }
 
 @font-face {
     font-family: heebo;
-    src: url(./Fonts/heeebo/Heebo-Bold.ttf);
+    src: url(../Fonts/heeebo/Heebo-Bold.ttf);
     font-weight: bold;
 }
 
 @font-face {
     font-family: heebo;
-    src: url(./Fonts/heeebo/Heebo-ExtraBold.ttf);
+    src: url(../Fonts/heeebo/Heebo-ExtraBold.ttf);
     font-weight: bolder;
 }
 
 @font-face {
     font-family: heebo;
-    src: url(./Fonts/heeebo/Heebo-Light.ttf);
+    src: url(../Fonts/heeebo/Heebo-Light.ttf);
     font-weight: light;
 }
 
 @font-face {
     font-family: heebo;
-    src: url(./Fonts/heeebo/Heebo-Medium.ttf);
+    src: url(../Fonts/heeebo/Heebo-Medium.ttf);
     font-weight: 500;
 }
 
 @font-face {
     font-family: heebo;
-    src: url(./Fonts/heeebo/Heebo-Regular.ttf);
+    src: url(../Fonts/heeebo/Heebo-Regular.ttf);
 }
 
 @font-face {
     font-family: heebo;
-    src: url(./Fonts/heeebo/Heebo-Thin.ttf);
+    src: url(../Fonts/heeebo/Heebo-Thin.ttf);
     font-weight: lighter;
 }
 
 @font-face {
     font-family: moon;
-    src: url(./Fonts/moon/Moon2.0-Light.otf);
+    src: url(../Fonts/moon/Moon2.0-Light.otf);
     font-weight: light;
 }
 
 @font-face {
     font-family: moon;
-    src: url(./Fonts/moon/Moon2.0-Regular.otf);
+    src: url(../Fonts/moon/Moon2.0-Regular.otf);
 }
 
 @font-face {
     font-family: moon;
-    src: url(./Fonts/moon/Moon2.0-Bold.otf);
+    src: url(../Fonts/moon/Moon2.0-Bold.otf);
     font-weight: bold;
-}
-
-.bioweapon {
-    font-family: 'bioweapon';
 }
 
 .heebo {
@@ -146,10 +149,6 @@ a:active {
 
 .moon {
     font-family: 'moon';
-}
-
-.comicSans {
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
 /* Nav Hamburger */

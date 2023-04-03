@@ -31,7 +31,7 @@ body{
 }
 
 .HeadIMG {
-    background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url(./assets/superdogs/Head.gif);
+    background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url(./Head.gif);
     background-repeat: no-repeat;
     background-size: 100%;
     height: 100vh;
@@ -64,7 +64,7 @@ body{
 }
 
 .SDog {
-    background-image: url(./assets/superdogs/SDog.jpg);
+    background-image: url(./SDog.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-color: white;
@@ -79,7 +79,7 @@ body{
 }
 
 .SDog2 {
-    background-image: url(./assets/superdogs/SDog2.jpg);
+    background-image: url(./SDog2.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-color: white;
@@ -90,7 +90,7 @@ body{
 }
 
 .SDrink {
-    background-image: url(./assets/superdogs/SDrink.jpg);
+    background-image: url(./SDrink.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-color: white;
@@ -101,7 +101,7 @@ body{
 }
 
 .SPret {
-    background-image: url(./assets/superdogs/SPret.jpg);
+    background-image: url(./SPret.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-color: white;
@@ -112,7 +112,7 @@ body{
 }
 
 .VDog {
-    background-image: url(./assets/superdogs/VDog.jpg);
+    background-image: url(./VDog.jpg);
     background-size: 60%;
     background-repeat: no-repeat;
     background-color: white;
@@ -123,7 +123,7 @@ body{
 }
 
 .Dogo {
-    background-image: url(./assets/superdogs/Dogo.jpg);
+    background-image: url(./Dogo.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-color: white;
@@ -134,7 +134,7 @@ body{
 }
 
 .AtomicDog {
-    background-image: url(./assets/superdogs/Atomic.jpg);
+    background-image: url(./Atomic.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-color: white;
@@ -212,6 +212,7 @@ body{
     width: 100vw;
 }
 
+/* ScrollBar */
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -230,6 +231,7 @@ body{
     background: var(--yellow);
 }
 
+/* Link Styling */
 a:link {
     text-decoration: none;
     color: var(--yellow);
@@ -246,71 +248,63 @@ a:active {
     color: var(--yellow);
 }
 
+/* Fonts */
 @font-face {
-    font-family: bioweapon;
-    src: url(./Fonts/bioweapon/BIOWEAPON.ttf);
-}
-
-@font-face {
-    font-family: heebo;
-    src: url(./Fonts/heeebo/Heebo-Black.ttf);
+    font-family: heebo-black;
+    src: url(../Fonts/heeebo/Heebo-Black.ttf);
     font-weight: 900;
 }
 
 @font-face {
     font-family: heebo;
-    src: url(./Fonts/heeebo/Heebo-Bold.ttf);
+    src: url(../Fonts/heeebo/Heebo-Bold.ttf);
     font-weight: bold;
 }
 
 @font-face {
     font-family: heebo;
-    src: url(./Fonts/heeebo/Heebo-ExtraBold.ttf);
+    src: url(../Fonts/heeebo/Heebo-ExtraBold.ttf);
     font-weight: bolder;
 }
 
 @font-face {
     font-family: heebo;
-    src: url(./Fonts/heeebo/Heebo-Light.ttf);
+    src: url(../Fonts/heeebo/Heebo-Light.ttf);
     font-weight: light;
 }
 
 @font-face {
     font-family: heebo;
-    src: url(./Fonts/heeebo/Heebo-Medium.ttf);
+    src: url(../Fonts/heeebo/Heebo-Medium.ttf);
     font-weight: 500;
 }
 
 @font-face {
     font-family: heebo;
-    src: url(./Fonts/heeebo/Heebo-Regular.ttf);
+    src: url(../Fonts/heeebo/Heebo-Regular.ttf);
 }
 
 @font-face {
     font-family: heebo;
-    src: url(./Fonts/heeebo/Heebo-Thin.ttf);
+    src: url(../Fonts/heeebo/Heebo-Thin.ttf);
     font-weight: lighter;
 }
 
 @font-face {
     font-family: moon;
-    src: url(./Fonts/moon/Moon2.0-Light.otf);
+    src: url(../Fonts/moon/Moon2.0-Light.otf);
     font-weight: light;
 }
 
 @font-face {
     font-family: moon;
-    src: url(./Fonts/moon/Moon2.0-Regular.otf);
+    src: url(../Fonts/moon/Moon2.0-Regular.otf);
 }
 
 @font-face {
     font-family: moon;
-    src: url(./Fonts/moon/Moon2.0-Bold.otf);
+    src: url(../Fonts/moon/Moon2.0-Bold.otf);
     font-weight: bold;
-}
-
-.bioweapon {
-    font-family: 'bioweapon';
 }
 
 .heebo {
@@ -321,6 +315,7 @@ a:active {
     font-family: 'moon';
 }
 
+/* Nav Hamburger */
 .ListNav {
     display: block;
 }
