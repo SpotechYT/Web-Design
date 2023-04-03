@@ -1,0 +1,200 @@
+:root {
+    --yellow: #fcb315;
+    --darkgrey: #4d4e53;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    margin-top: -8px;
+    margin-left: -8px;
+    width: 100vw;
+    height: 50px;
+    background-color: #454a4d;
+    max-height: 50px;
+    font-size: 25px;
+    color: var(--yellow);
+    vertical-align: middle;
+}
+
+header a {
+  margin: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+body{
+    background-color: grey;
+    color: var(--yellow);
+    overflow-x: hidden;
+}
+
+.space {
+    background: linear-gradient(rgba(100,100,125,0.5), rgba(0,0,0,0.5)),
+    url(./Stars.jpg);
+    background-size: 1000px;
+}
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* ScrollBar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #202324;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #454a4d;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--yellow);
+}
+
+/* Link Styling */
+a:link {
+    text-decoration: none;
+    color: var(--yellow);
+}
+a:visited {
+    text-decoration: none;
+    color: var(--yellow);
+}
+a:hover {
+    color: orange;
+}
+a:active {
+    text-decoration: none; 
+    color: var(--yellow);
+}
+
+/* Fonts */
+@font-face {
+    font-family: bioweapon;
+    src: url(./Fonts/bioweapon/BIOWEAPON.ttf);
+}
+
+@font-face {
+    font-family: heebo-black;
+    src: url(./Fonts/heeebo/Heebo-Black.ttf);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: heebo;
+    src: url(./Fonts/heeebo/Heebo-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: heebo;
+    src: url(./Fonts/heeebo/Heebo-ExtraBold.ttf);
+    font-weight: bolder;
+}
+
+@font-face {
+    font-family: heebo;
+    src: url(./Fonts/heeebo/Heebo-Light.ttf);
+    font-weight: light;
+}
+
+@font-face {
+    font-family: heebo;
+    src: url(./Fonts/heeebo/Heebo-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: heebo;
+    src: url(./Fonts/heeebo/Heebo-Regular.ttf);
+}
+
+@font-face {
+    font-family: heebo;
+    src: url(./Fonts/heeebo/Heebo-Thin.ttf);
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: moon;
+    src: url(./Fonts/moon/Moon2.0-Light.otf);
+    font-weight: light;
+}
+
+@font-face {
+    font-family: moon;
+    src: url(./Fonts/moon/Moon2.0-Regular.otf);
+}
+
+@font-face {
+    font-family: moon;
+    src: url(./Fonts/moon/Moon2.0-Bold.otf);
+    font-weight: bold;
+}
+
+.bioweapon {
+    font-family: 'bioweapon';
+}
+
+.heebo {
+    font-family: 'heebo';
+}
+
+.moon {
+    font-family: 'moon';
+}
+
+.comicSans {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+/* Nav Hamburger */
+.ListNav {
+    display: block;
+}
+
+.HamburgerNav {
+    display: none;
+
+    right: 30px;
+    position: absolute;
+    top: 0px;
+    color: var(--yellow);
+}
+
+.HamburgerMenu {
+    display: none;
+
+    flex-direction: column;
+    flex-wrap: nowrap;
+    position: fixed;
+    background-color: #202324;
+    margin-left: -8px;
+    margin-top: 50px;
+    width: 100vw;
+    height: 100vh;
+    border: var(--yellow) solid 1px;
+}
+
+.HamburgerMenu a {
+    font-size: 75px;
+    border-bottom: #fcb315 solid 1px;
+}
+
+@media screen and (max-width: 910px) {
+    .HamburgerNav {
+        display: block;
+    }
+    .ListNav {
+        display: none;
+    }
+}
