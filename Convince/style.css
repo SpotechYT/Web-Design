@@ -8,6 +8,7 @@ header {
     flex-wrap: wrap;
     padding: 5px;
     margin-top: -8px;
+    position: fixed;
     margin-left: -8px;
     width: 100vw;
     height: 50px;
