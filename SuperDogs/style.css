@@ -333,7 +333,7 @@ a:active {
 
 .HamburgerMenu {
     display: none;
-
+    z-index: 99;
     flex-direction: column;
     flex-wrap: nowrap;
     position: fixed;
