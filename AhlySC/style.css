@@ -1,6 +1,6 @@
 :root {
-    --yellow: #fcb315;
-    --darkgrey: #4d4e53;
+    --red: #860004;
+    --gold: #d49e14;
 }
 
 header {
@@ -11,10 +11,11 @@ header {
     margin-left: -8px;
     width: 100vw;
     height: 50px;
-    background-color: #454a4d;
+    background-color: var(--red);
     max-height: 50px;
     font-size: 25px;
-    color: var(--yellow);
+    color: var(--gold);
+    border-bottom: 1px solid var(--gold);
     vertical-align: middle;
 }
 
@@ -37,8 +38,8 @@ header a {
 }
 
 body{
-    background-color: grey;
-    color: white;
+    background-color: var(--red);
+    color: var(--gold);
     overflow-x: hidden;
 }
 
