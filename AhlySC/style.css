@@ -1,6 +1,7 @@
 :root {
     --red: #860004;
     --gold: #d49e14;
+    --fadedgold: #a87d10;
 }
 
 header {
@@ -11,7 +12,7 @@ header {
     margin-left: -8px;
     width: 100vw;
     height: 50px;
-    background-color: var(--red);
+    background-color: rgb(98, 1, 1);
     max-height: 50px;
     font-size: 25px;
     color: var(--gold);
@@ -25,10 +26,73 @@ header a {
   padding-left: 10px;
 }
 
+table {
+    margin-top: 10px;
+    width: 100%;
+    border: 2px solid var(--gold);
+}
+
+th,td {
+    border: 2px solid var(--gold);
+}
+
 body{
     background-color: var(--red);
     color: var(--gold);
     overflow-x: hidden;
+}
+
+.merch {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    background-color: #454a4d;
+    padding: 10px;
+    margin: 5px;
+    width: 90%;
+}
+
+.card p,h2 {
+    line-height: 0px;
+    height: 0px;
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    padding: 0px;
+}
+
+.card div {
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.card button {
+    width: fit-content;
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.row img {
+    padding: 0;
+}
+
+.team {
+    width: 50%;
 }
 
 .bruhh {
@@ -40,6 +104,37 @@ body{
 .A {
     width: 45%;
     border-radius: 10px;
+}
+
+#fname,#lname,#email {
+    padding: 5px;
+    margin-bottom: 5px;
+    width: 25%;
+    height: 30px;
+    background-color: var(--red);
+    color: var(--gold);
+    border: 2px solid var(--gold);
+    border-radius: 5px;
+}
+
+#submit {
+    background-color: var(--red);
+    color: var(--gold);
+    border: 2px solid var(--gold);
+    border-radius: 5px; 
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--fadedgold);
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: var(--fadedgold);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: var(--fadedgold);
 }
 
 @media screen and (max-width: 1023px){
