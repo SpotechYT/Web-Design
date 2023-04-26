@@ -1,0 +1,306 @@
+header {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    margin-top: -8px;
+    margin-left: -8px;
+    width: 100vw;
+    height: 50px;
+    background-color: #adadad;
+    max-height: 50px;
+    font-size: 25px;
+    color: black;
+    vertical-align: middle;
+}
+
+header a {
+  margin: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+body{
+    background-color: #cfcfcf;
+    color: black;
+    overflow-x: hidden;
+}
+
+.about {
+    display: grid;
+    justify-content: space-between;
+    row-gap: 50px;
+    grid-template:
+        "L R"
+        "L R"
+        "L R";
+}
+
+.about-vertical {
+    display: none;
+}
+
+@media screen and (max-width: 1200px){
+    .about-vertical {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about {
+        display: none;
+    }
+}
+
+.right {
+    justify-content: right;
+    text-align: right;
+    right: 0px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.item {
+    position: relative;
+    max-width: 600px;
+    border: 5px black solid;
+    padding: 5px;
+    margin: 5px;
+}
+
+@keyframes open-stats {
+    0% {
+        width: 0px;
+        padding: 0px;
+        text-overflow: clip;
+    }
+    100% {
+        width: 50%;
+    }
+}
+
+.stats {
+    position: absolute;
+    width: 50%;
+    top: 5px;
+    padding-left: 5px;
+    padding-right: 20px;
+    height: calc(100% - 10px);
+    background-color: white;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#topbutton {
+    border-radius: 5px;
+    background-color: LightSlateGrey;
+}
+
+.stats li {
+    font-size: 15px;
+}
+
+.item .stats {
+    visibility: hidden;
+}
+
+.item:hover .stats {
+    visibility: visible;
+    animation: open-stats 0.4s 1 ease;
+}
+
+hr {
+    width: 95vw;
+    height: 5px;
+    color: black;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: bioweapon;
+}
+
+ul, ol {
+  padding-inline-start: -5px;
+  font-size: 24px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  background-color: var(--darkgrey);
+}
+  
+td, th {
+  border: 1px solid #000000;
+  text-align: left;
+  padding: 8px;
+}
+
+#game {
+    justify-content: right;
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: 50px;
+}
+
+/* ScrollBar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #202324;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #454a4d;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--yellow);
+}
+
+/* Link Styling */
+a:link {
+    text-decoration: none;
+    color: var(--yellow);
+}
+a:visited {
+    text-decoration: none;
+    color: var(--yellow);
+}
+a:hover {
+    color: #696969;
+}
+a:active {
+    text-decoration: none; 
+    color: var(--yellow);
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Fonts */
+@font-face {
+    font-family: heebo-black;
+    src: url(../Fonts/heeebo/Heebo-Black.ttf);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: heebo;
+    src: url(../Fonts/heeebo/Heebo-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: heebo;
+    src: url(../Fonts/heeebo/Heebo-ExtraBold.ttf);
+    font-weight: bolder;
+}
+
+@font-face {
+    font-family: heebo;
+    src: url(../Fonts/heeebo/Heebo-Light.ttf);
+    font-weight: light;
+}
+
+@font-face {
+    font-family: heebo;
+    src: url(../Fonts/heeebo/Heebo-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: heebo;
+    src: url(../Fonts/heeebo/Heebo-Regular.ttf);
+}
+
+@font-face {
+    font-family: heebo;
+    src: url(../Fonts/heeebo/Heebo-Thin.ttf);
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: moon;
+    src: url(../Fonts/moon/Moon2.0-Light.otf);
+    font-weight: light;
+}
+
+@font-face {
+    font-family: moon;
+    src: url(../Fonts/moon/Moon2.0-Regular.otf);
+}
+
+@font-face {
+    font-family: moon;
+    src: url(../Fonts/moon/Moon2.0-Bold.otf);
+    font-weight: bold;
+}
+
+.heebo {
+    font-family: 'heebo';
+}
+
+.moon {
+    font-family: 'moon';
+}
+
+.bioweapon {
+    font-family: 'bioweapon';
+}
+
+/* Nav Hamburger */
+.ListNav {
+    display: block;
+}
+
+.HamburgerNav {
+    display: none;
+
+    right: 30px;
+    position: absolute;
+    top: 0px;
+    color: black;
+}
+
+.HamburgerMenu {
+    display: none;
+    z-index: 99;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    position: fixed;
+    background-color: #cfcfcf;
+    margin-left: -8px;
+    margin-top: 50px;
+    width: 100vw;
+    height: 100vh;
+    border: black solid 1px;
+}
+
+.HamburgerMenu a {
+    font-size: 50px;
+    border-bottom: black solid 1px;
+}
+
+@media screen and (max-width: 910px) {
+    .HamburgerNav {
+        display: block;
+    }
+    .ListNav {
+        display: none;
+    }
+}
