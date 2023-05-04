@@ -193,7 +193,7 @@ a:active {
     border-bottom: #fcb315 solid 1px;
 }
 
-@media screen and (max-width: 910px) {
+@media screen and (max-width: 1430px){
     .HamburgerNav {
         display: block;
     }

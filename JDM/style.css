@@ -140,13 +140,6 @@ td, th {
   padding: 8px;
 }
 
-#game {
-    justify-content: right;
-    margin-left: auto;
-    margin-right: 0;
-    margin-top: 50px;
-}
-
 /* ScrollBar */
 ::-webkit-scrollbar {
     width: 10px;
@@ -296,7 +289,7 @@ a:active {
     border-bottom: black solid 1px;
 }
 
-@media screen and (max-width: 910px) {
+@media screen and (max-width: 1430px){
     .HamburgerNav {
         display: block;
     }
