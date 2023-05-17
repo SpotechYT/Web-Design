@@ -1,0 +1,182 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Abibas</title>
+        <link rel="icon" type="image/x-icon" href="./Abibas.png">
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <script src="../hamburger.js"></script>
+    <header class="moon" id="nav">
+        <img src="./Abibas.png" style="height: 50px">
+        <a class="ListNav" href="../">Haniel Mikhaiel</a>
+        <a class="ListNav">|</a>
+        <a class="ListNav" href="../Nouns">Nouns Project</a>
+        <a class="ListNav">|</a>
+        <a class="ListNav" href="../Convince">Convince Project</a>
+        <a class="ListNav">|</a>
+        <a class="ListNav" href="../SuperDogs">Super Dogs</a>
+        <a class="ListNav">|</a>
+        <a class="ListNav" href="../Spot5Pro">Spot-5 Pro</a>
+        <a class="ListNav">|</a>
+        <a class="ListNav" href="../Final">Sports Team</a>
+        <a class="ListNav">|</a>
+        <a class="ListNav" href="../AhlySC">Ahly SC</a>
+        <a class="ListNav">|</a>
+        <a class="ListNav" href="../JDM">JDM World</a>
+        <a class="ListNav">|</a>
+        <a class="ListNav" href="../Abibas">Abibas</a>
+  
+        <a class="HamburgerNav" href="javascript:void(0);" onclick="ham()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="35" height="35"><path fill="none" d="M0 0h24v24H0z"/><path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"/></svg></a>
+        <div id="HamburgerMenu" class="HamburgerMenu">
+            <a href="../">Haniel Mikhaiel</a>
+            <a href="../Nouns">Nouns Project</a>
+            <a href="../Convince">Convince Project</a>
+            <a href="../SuperDogs">Super Dogs</a>
+            <a href="../Spot5Pro">Spot-5 Pro</a>
+            <a href="../Final">Sports Team</a>
+            <a href="../AhlySC">Ahly SC</a>
+            <a href="../AhlySC">JDM World</a>
+            <a href="../Abibas">Abibas</a>
+        </div>
+
+        <center>
+            <div id="entireDiv" class="nav-search">
+                <form autocomplete="off" action="#">
+                  <div class="autocomplete">
+                    <input id="myInput" type="text" name="myBox" placeholder="Search For a Product...">
+                  </div>
+                </form>
+            </div>
+        </center>
+    </header>
+    <body class="heebo">
+        <div class="head">
+            <div class="center" style="line-height: 10px;">
+                <center>
+                    <h1 style="font-size: 250px;">Abibas</h1>
+                    <h2 style="font-size: 50px;">The shopping cart works!</h2>
+                </center>
+            </div>
+        </div>
+        <center>
+            <div id="entireDiv" class="main-search">
+                <form autocomplete="off" action="#">
+                  <div class="autocomplete">
+                    <input id="myInput" type="text" name="myBox" placeholder="Search For a Product...">
+                  </div>
+                </form>
+            </div>
+        </center>
+        <div id="products">
+            <h1 style="font-weight: 400; padding-left: 10px;">Products</h1>
+            <div class="card-wrapper">
+                <div class="product-card">
+                    <center>
+                        <img src="./shirt.jpg">
+                        <div style="line-height: 10px;">
+                            <b><h3>Abibas Shirt</h3></b>
+                            <p>Show off your Abibas style</p>
+                            <p>$25</p>
+                        </div>
+                        <button onclick="addItem('Abibas Shirt', '$25', './shirt.jpg');">Purchase</button>
+                    </center>
+                </div>
+                <div class="product-card">
+                    <center>
+                        <img src="./hoodie.jpg">
+                        <div style="line-height: 10px;">
+                            <b><h3>Abibas Hoodie</h3></b>
+                            <p>Stay wamr with Abibas style</p>
+                            <p>$50</p>
+                        </div>
+                        <button onclick="addItem('Abibas Hoodie', '$50', './hoodie.jpg');">Purchase</button>
+                    </center>
+                </div>
+                <div class="product-card">
+                    <center>
+                        <img src="./mug.jpg">
+                        <div style="line-height: 10px;">
+                            <b><h3>Abibas Mug</h3></b>
+                            <p>Drink coffee with Abibas style</p>
+                            <p>$70</p>
+                        </div>
+                        <button onclick="addItem('Abibas Mug', '$70', './mug.jpg');">Purchase</button>
+                    </center>
+                </div>
+                <div class="product-card">
+                    <center>
+                        <img src="./phone.jpg">
+                        <div style="line-height: 10px;">
+                            <b><h3>Abibas Phone Case</h3></b>
+                            <p>Call your friends with Abibas style</p>
+                            <p>$25</p>
+                        </div>
+                        <button onclick="addItem('Abibas Phone Case', '$25', './phone.jpg');">Purchase</button>
+                    </center>
+                </div>
+                <div class="product-card">
+                    <center>
+                        <img src="./bottle.jpg">
+                        <div style="line-height: 10px;">
+                            <b><h3>Abibas Water Bottle</h3></b>
+                            <p>Drink with Abibas style</p>
+                            <p>$50</p>
+                        </div>
+                        <button onclick="addItem('Abibas Water Bottle', '$50', './bottle.jpg');">Purchase</button>
+                    </center>
+                </div>
+            </div>
+        </div>
+
+
+        <h1 style="font-weight: 400; padding-left: 10px;">Abibas News</h1>
+        <div class="card-wrapper">
+            <div class="item">
+                <img src="./pk.jpg" width="100%">
+                <div class="stats">
+                    <h2>Penalty Kick</h2>
+                    <br>
+                    <p>A penalty kick is a award for</p><p>being injured inside of the goal</p><p>box and consists of a free shot on goal</p><p>from the penalty spot. No one can </p><p>interfear except the goalie and they must </p><p>stay on the line untill the ball is touched</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./ball.jpg" width="100%">
+                <div class="stats">
+                    <h2>Soccer Ball</h2>
+                    <br>
+                    <p>A soccer ball is a ball that you kick in</p><p>soccer... what were you expecting.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./fk.jpg" width="100%">
+                <div class="stats">
+                    <h2>Free Kick</h2>
+                    <br>
+                    <p>A free kick is a award for</p><p>being injured ouside of the </p><p>goal box and consists of a </p><p>free shot on goal from the </p><p>injury spot.</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="Club">
+            <h2>Join the Abibas Club & get $69 in store!</h1>
+            <button onclick="window.alert('Thank you for joining!');"><b>Join Now!</b></button>
+        </div>
+
+        <div id="cartBkg"></div>
+        <div class="cart-icon">
+            <button style="font-size:50px" onclick="openCart();"><center><i class="fa fa-shopping-cart"></i></center></button>
+            <div id="items-count-container">
+                <b><p id="items-count">0</p></b>
+            </div>
+        </div>
+        <div id="cart" class="center">
+            <div id="items-in-cart"></div>
+            <div class="cart-buttons">
+                <center><button onclick="window.alert('U cant buy the items but I dont mind taking ur credit card info...');">Checkout</button></center>
+            </div>
+        </div>
+    </body>
+    <script src="./cart.js"></script>
+    <script src="./search.js"></script>
+</html>
