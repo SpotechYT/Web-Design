@@ -1,7 +1,9 @@
 header {
     display: flex;
+    position: fixed;
     flex-wrap: wrap;
     padding: 5px;
+    top: 8px;
     margin-top: -8px;
     margin-left: -8px;
     width: 100vw;
@@ -11,6 +13,7 @@ header {
     font-size: 25px;
     color: black;
     vertical-align: middle;
+    z-index: 1;
 }
 
 header a {
@@ -21,8 +24,212 @@ header a {
 
 body{
     background-color: #cfcfcf;
+    margin-top: 50px;
     color: black;
     overflow-x: hidden;
+}
+
+.cart-icon {
+    position: fixed;
+    top: 60px;
+    right: 5px;
+    margin: 5px 0px 0px 0px;
+}
+
+.cart-icon button {
+    width: 75px;
+    height: 75px;
+    border: 2px #cacaca solid;
+    border-radius: 50px;
+}
+
+#items-count-container {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    justify-content: center;
+    text-align: center;
+    line-height: 0px;
+    width: 25px;
+    height: 25px;
+    background-color: #ff1a1a;
+    border: 2px #fc3939 solid;
+    border-radius: 50px;
+}
+
+#cartBkg {
+    visibility: hidden;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#cart {
+    position: fixed;
+    visibility: hidden;
+    z-index: 1;
+    padding: 20px;
+    width: 50vw;
+    height: 75vh;
+    background-color: white;
+    border: 2px #cacaca solid;
+    border-radius: 25px;
+}
+
+#items-in-cart {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 2px #f1f1f1 solid;
+    border-radius: 5px;
+    width: 100%;
+    height: 90%;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px;
+    border-bottom: 2px #f1f1f1 solid;
+}
+
+.item-remove {
+    width: 30px;
+    height: 30px;
+}
+
+.cart-item img {
+    height: 100px;
+    border-radius: 5px;
+}
+
+.cart-item #item-info {
+    line-height: 10px;
+    text-align: right;
+    margin-right: 15px;
+}
+
+.cart-buttons {
+    width: 100%;
+    height: 10%;
+}
+
+.cart-buttons button {
+    width: 50%;
+    height: 90%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: none;
+    cursor: not-allowed;
+}
+
+.product-card {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    width: 250px;
+    min-width: 250px;
+    height: 350px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.product-card img {
+    height: 200px;
+    border-radius: 5px;
+}
+
+.product-card button {
+    position: absolute;
+    background-color: #1653ce;
+    color: white;
+    width: 100%;
+    height: 50px;
+    bottom: 0px;
+    left: 0px;
+    border: 0px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.product-card button:hover { 
+    background-color: #1544a1;
+}
+
+.products {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 10px;
+}
+
+.product-head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+.head {
+    margin-left: -8px;
+    width: 100vw;
+    height: calc(100vh - 50px);
+    background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url('./header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.autocomplete {
+    background-color: none;
+    padding: 10px;
+    text-align: left;
+    cursor: pointer;
+}
+
+#myInput {
+    width: 100%;
+    outline: none;
+    background-color: #f1f1f1;
+    height: 30px;
+    border: solid black 2px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.autocomplete-items {
+    background-color: #f1f1f1;
+    border: solid black 2px;
+    border-top: none;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.autocomplete DIV DIV {
+    border-bottom: solid black 2px;
+}
+
+.autocomplete DIV DIV:last-child {
+    border-bottom: none;
+}
+
+#entireDiv {
+    position: inherit;
+    width: 50vw;
 }
 
 ul, ol {
@@ -191,11 +398,32 @@ a:active {
     border-bottom: black solid 1px;
 }
 
+
+.main-search {
+    visibility: visible;
+}
+
+.nav-search {
+    visibility: hidden;
+}
+
 @media screen and (max-width: 1430px){
     .HamburgerNav {
         display: block;
     }
     .ListNav {
         display: none;
+    }
+
+    .main-search {
+        visibility: hidden;
+    }
+    
+    .nav-search {
+        visibility: visible;
+    }
+    #entireDiv {
+        width: calc(100vw - 125px);
+        padding-left: 10px;
     }
 }

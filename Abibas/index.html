@@ -1,9 +1,10 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>Haniel Mikhaiel</title>
+        <title>Abibas</title>
         <link rel="icon" type="image/x-icon" href="./Abibas.png">
         <link rel="stylesheet" type="text/css" href="./style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <script src="../hamburger.js"></script>
     <header class="moon" id="nav">
@@ -38,8 +39,110 @@
             <a href="../AhlySC">JDM World</a>
             <a href="../Abibas">Abibas</a>
         </div>
-      </header>
+
+        <center>
+            <div id="entireDiv" class="nav-search">
+                <form autocomplete="off" action="#">
+                  <div class="autocomplete">
+                    <input id="myInput" type="text" name="myBox" placeholder="Search For a Product...">
+                  </div>
+                </form>
+            </div>
+        </center>
+    </header>
     <body class="heebo">
-        
+        <div class="head">
+            <div class="center" style="line-height: 10px;">
+                <center>
+                    <h1 style="font-size: 250px;">Abibas</h1>
+                    <h2 style="font-size: 50px;">The shopping cart works!</h2>
+                </center>
+            </div>
+        </div>
+        <center>
+            <div id="entireDiv" class="main-search">
+                <form autocomplete="off" action="#">
+                  <div class="autocomplete">
+                    <input id="myInput" type="text" name="myBox" placeholder="Search For a Product...">
+                  </div>
+                </form>
+            </div>
+        </center>
+        <div id="products">
+            <h1 style="font-weight: 400; padding-left: 10px;">Products</h1>
+            <div class="products">
+                <div class="product-card">
+                    <center>
+                        <img src="./shirt.jpg">
+                        <div style="line-height: 10px;">
+                            <b><h3>Abibas Shirt</h3></b>
+                            <p>Show off your Abibas style</p>
+                            <p>$25</p>
+                        </div>
+                        <button onclick="addItem('Abibas Shirt', '$25', './shirt.jpg');">Purchase</button>
+                    </center>
+                </div>
+                <div class="product-card">
+                    <center>
+                        <img src="./hoodie.jpg">
+                        <div style="line-height: 10px;">
+                            <b><h3>Abibas Hoodie</h3></b>
+                            <p>Stay wamr with Abibas style</p>
+                            <p>$50</p>
+                        </div>
+                        <button onclick="addItem('Abibas Hoodie', '$50', './hoodie.jpg');">Purchase</button>
+                    </center>
+                </div>
+                <div class="product-card">
+                    <center>
+                        <img src="./mug.jpg">
+                        <div style="line-height: 10px;">
+                            <b><h3>Abibas Mug</h3></b>
+                            <p>Drink coffee with Abibas style</p>
+                            <p>$70</p>
+                        </div>
+                        <button onclick="addItem('Abibas Mug', '$70', './mug.jpg');">Purchase</button>
+                    </center>
+                </div>
+                <div class="product-card">
+                    <center>
+                        <img src="./phone.jpg">
+                        <div style="line-height: 10px;">
+                            <b><h3>Abibas Phone Case</h3></b>
+                            <p>Call your friends with Abibas style</p>
+                            <p>$25</p>
+                        </div>
+                        <button onclick="addItem('Abibas Phone Case', '$25', './phone.jpg');">Purchase</button>
+                    </center>
+                </div>
+                <div class="product-card">
+                    <center>
+                        <img src="./bottle.jpg">
+                        <div style="line-height: 10px;">
+                            <b><h3>Abibas Water Bottle</h3></b>
+                            <p>Drink with Abibas style</p>
+                            <p>$50</p>
+                        </div>
+                        <button onclick="addItem('Abibas Water Bottle', '$50', './bottle.jpg');">Purchase</button>
+                    </center>
+                </div>
+            </div>
+        </div>
+
+        <div id="cartBkg"></div>
+        <div class="cart-icon">
+            <button style="font-size:50px" onclick="openCart();"><center><i class="fa fa-shopping-cart"></i></center></button>
+            <div id="items-count-container">
+                <b><p id="items-count">0</p></b>
+            </div>
+        </div>
+        <div id="cart" class="center">
+            <div id="items-in-cart"></div>
+            <div class="cart-buttons">
+                <center><button onclick="window.alert('U cant buy the items but I dont mind taking ur credit card info...');">Checkout</button></center>
+            </div>
+        </div>
     </body>
+    <script src="./cart.js"></script>
+    <script src="./search.js"></script>
 </html>
