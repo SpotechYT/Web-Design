@@ -25,15 +25,18 @@ header a {
 }
 
 body{
-    background-color: grey;
+    background-color: #0B1C22;
     color: var(--yellow);
     overflow-x: hidden;
 }
 
-.toppoLight {
-    background: linear-gradient(rgba(100,100,125,0.5), rgba(0,0,0,0.5)),
-    url(./Toppo.jpeg);
-    background-size: 250px;
+.center {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 /* ScrollBar */
@@ -178,6 +181,7 @@ a:active {
     width: 100vw;
     height: 100vh;
     border: var(--yellow) solid 1px;
+    z-index: 1;
 }
 
 .HamburgerMenu a {
@@ -192,4 +196,81 @@ a:active {
     .ListNav {
         display: none;
     }
+}
+
+.solar-system {
+  width: 780px;
+  height: 780px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.orbit {
+  border: 1px solid rgb(55, 53, 69);
+}
+
+#sun,
+.orbit,
+.orbit + div,
+.orbit + div > div {
+  position: absolute;
+}
+
+#sun,
+.orbit,
+.orbit + div {
+  top: 50%;
+  left: 50%;
+}
+.orbit + div > div {
+  top: 0;
+  left: 50%;
+}
+
+.orbit,
+.orbit + div div,
+#earth {
+  border-radius: 50%;
+}
+
+/* Individual objects rules. They are pretty much the same for 
+all objects and basically only vary in orbit size 
+and planet size. And colors :) */
+
+#sun {
+  /* Positions the top-left corner of the image to be *
+	/* in the middle of the box */
+  height: 200px;
+  width: 200px;
+  background-color: #C25447;
+  margin-top: -100px;
+  margin-left: -100px;
+  border-radius: 50%;
+}
+
+#venus {
+  margin-top: -20px;
+  margin-left: -20px;
+  height: 40px;
+  width: 40px;
+  background-color: #9E9E9E;
+}
+.venus-orbit,
+.venus-spin {
+  margin-top: -185px;
+  margin-left: -185px;
+  width: 370px;
+  height: 370px;
+}
+
+/* Spinning animations */
+
+@keyframes spin-right {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.venus-spin {
+  animation: spin-right 30s linear infinite;
 }
