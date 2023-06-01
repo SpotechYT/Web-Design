@@ -45,7 +45,7 @@ body{
 }
 
 ::-webkit-scrollbar-track {
-    background: #202324;
+    background: #31383a;
     border-radius: 5px;
 }
 
@@ -181,7 +181,7 @@ a:active {
     width: 100vw;
     height: 100vh;
     border: var(--yellow) solid 1px;
-    z-index: 1;
+    z-index: 99;
 }
 
 .HamburgerMenu a {
@@ -273,4 +273,30 @@ and planet size. And colors :) */
 
 .venus-spin {
   animation: spin-right 20s linear infinite;
+}
+
+.card-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.item {
+    position: relative;
+    min-width: 600px;
+    max-width: 100%;
+    border: 5px black solid;
+    padding: 5px;
+    margin: 5px;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
