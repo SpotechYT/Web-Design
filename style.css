@@ -25,7 +25,7 @@ header a {
 }
 
 body{
-    background-color: #0B1C22;
+    background-color: #1a2022;
     color: var(--yellow);
     overflow-x: hidden;
 }
@@ -272,5 +272,5 @@ and planet size. And colors :) */
 }
 
 .venus-spin {
-  animation: spin-right 30s linear infinite;
+  animation: spin-right 20s linear infinite;
 }
